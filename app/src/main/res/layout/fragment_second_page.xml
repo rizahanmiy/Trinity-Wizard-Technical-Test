@@ -3,12 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:bind="http://schemas.android.com/apk/res-auto">
 
-    <data>
-
-        <variable
-            name="viewmodel"
-            type="com.rizahanmiy.trinitywizard.presentation.viewmodel.SecondPageViewModel" />
-    </data>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -35,6 +29,13 @@
                     android:layout_marginStart="8dp"
                     android:layout_marginEnd="8dp"
                     android:padding="8dp">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="99dp" />
 
                     <ImageView
                         android:id="@+id/iv_contact"
@@ -75,13 +76,6 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@id/guideline"
                         app:layout_constraintTop_toBottomOf="@id/tv_main_info" />
-
-                    <androidx.constraintlayout.widget.Guideline
-                        android:id="@+id/guideline"
-                        android:layout_width="wrap_content"
-                        android:layout_height="1dp"
-                        android:orientation="vertical"
-                        app:layout_constraintGuide_begin="137dp" />
 
                     <TextView
                         android:id="@+id/tvLastName"

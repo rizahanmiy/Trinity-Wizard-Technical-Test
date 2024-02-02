@@ -17,6 +17,9 @@ import com.rizahanmiy.trinitywizard.data.entities.Contacts
 import com.rizahanmiy.trinitywizard.databinding.FragmentFirstPageBinding
 import com.rizahanmiy.trinitywizard.presentation.ui.adapter.MainAdapter
 import com.rizahanmiy.trinitywizard.presentation.viewmodel.FirstPageViewModel
+import com.rizahanmiy.trinitywizard.util.constant.AppConstants
+import com.rizahanmiy.trinitywizard.util.constant.AppConstants.APP_PREF
+import com.rizahanmiy.trinitywizard.util.constant.AppConstants.POSITION_ID
 
 class FirstPage : Fragment() {
 
@@ -50,8 +53,8 @@ class FirstPage : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val sharedPref = context?.getSharedPreferences("SHARED_PREFS", Context.MODE_PRIVATE)
-        val position = sharedPref?.getInt("position", 0)
+        val sharedPref = context?.getSharedPreferences(APP_PREF, Context.MODE_PRIVATE)
+        val position = sharedPref?.getInt(POSITION_ID, 0)
 
 
             navController = Navigation.findNavController(view)
@@ -62,7 +65,7 @@ class FirstPage : Fragment() {
 
         binding.srlList.setOnRefreshListener {
             isRefresh =true
-            resetVariableState(position!!)
+            resetState(position!!)
 
             binding.srlList.isRefreshing = true
             firstPageViewModel.handleGetData(context)
@@ -74,16 +77,17 @@ class FirstPage : Fragment() {
 
 
             contactList.addAll(res)
+
             if (argument.firstName.isNotEmpty() && !isRefresh)
                 contactList[position!!].firstName = argument.firstName
             if (argument.lastName.isNotEmpty() && !isRefresh)
                 contactList[position!!].lastName = argument.lastName
-            setupRvAdapter()
+            setupAdapter()
 
         }
     }
 
-    private fun setupRvAdapter(){
+    private fun setupAdapter(){
         contactListingAdapter = MainAdapter(contactList){ item ->
             navController.navigate(
                 FirstPageDirections.actionFirstPageToSecondPge(
@@ -105,7 +109,7 @@ class FirstPage : Fragment() {
         }
     }
 
-    private fun resetVariableState(position: Int) {
+    private fun resetState(position: Int) {
         contactList.clear()
     }
 
