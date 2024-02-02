@@ -1,4 +1,4 @@
-package com.rizahanmiy.trinitywizardtest
+package com.rizahanmiy.trinitywizard
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

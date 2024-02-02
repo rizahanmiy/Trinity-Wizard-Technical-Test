@@ -1,4 +1,4 @@
-package com.rizahanmiy.trinitywizardtest.presentation.ui.firstpage
+package com.rizahanmiy.trinitywizard.presentation.ui.firstpage
 
 import android.content.Context
 import android.os.Bundle
@@ -12,11 +12,11 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.GridLayoutManager
-import com.rizahanmiy.trinitywizardtest.R
-import com.rizahanmiy.trinitywizardtest.databinding.FragmentFirstPageBinding
-import com.rizahanmiy.trinitywizardtest.data.entities.Contacts
-import com.rizahanmiy.trinitywizardtest.presentation.ui.adapter.MainAdapter
-import com.rizahanmiy.trinitywizardtest.presentation.viewmodel.FirstPageViewModel
+import com.rizahanmiy.trinitywizard.R
+import com.rizahanmiy.trinitywizard.data.entities.Contacts
+import com.rizahanmiy.trinitywizard.databinding.FragmentFirstPageBinding
+import com.rizahanmiy.trinitywizard.presentation.ui.adapter.MainAdapter
+import com.rizahanmiy.trinitywizard.presentation.viewmodel.FirstPageViewModel
 
 class FirstPage : Fragment() {
 
@@ -27,7 +27,7 @@ class FirstPage : Fragment() {
     private var fragmentView: View? = null
     private lateinit var navController: NavController
 
-    private lateinit var contactListingAdapter: MainAdapter //API
+    private lateinit var contactListingAdapter: MainAdapter
     private lateinit var layoutManager: GridLayoutManager
     private var contactList = mutableListOf<Contacts>()
 
@@ -40,7 +40,6 @@ class FirstPage : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         if (fragmentView != null) {
-//            isFirstTime = false
             return fragmentView
         }
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_first_page, container, false)
@@ -58,7 +57,6 @@ class FirstPage : Fragment() {
             navController = Navigation.findNavController(view)
 
             layoutManager = GridLayoutManager(context, 2)
-//
             setupRecyclerView()
             firstPageViewModel.handleGetData(context)
 
@@ -70,8 +68,6 @@ class FirstPage : Fragment() {
             firstPageViewModel.handleGetData(context)
 
         }
-
-//        }
 
         firstPageViewModel.contactList.observe(viewLifecycleOwner) { res ->
             binding.srlList.isRefreshing = false

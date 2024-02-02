@@ -1,11 +1,11 @@
-package com.rizahanmiy.trinitywizardtest.presentation.ui.adapter
+package com.rizahanmiy.trinitywizard.presentation.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.rizahanmiy.trinitywizardtest.databinding.ItemContactListingBinding
-import com.rizahanmiy.trinitywizardtest.data.entities.Contacts
+import com.rizahanmiy.trinitywizard.data.entities.Contacts
+import com.rizahanmiy.trinitywizard.databinding.ItemContactListingBinding
 
 
 class MainAdapter(
@@ -37,7 +37,6 @@ class MainAdapter(
 
         init {
             itemView.setOnClickListener {
-                // this will be called only once.
 
                 with (sharedPref.edit()) {
                     putInt("position", adapterPosition)

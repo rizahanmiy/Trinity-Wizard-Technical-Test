@@ -1,4 +1,4 @@
-package com.rizahanmiy.trinitywizardtest
+package com.rizahanmiy.trinitywizard
 
 import org.junit.Test
 

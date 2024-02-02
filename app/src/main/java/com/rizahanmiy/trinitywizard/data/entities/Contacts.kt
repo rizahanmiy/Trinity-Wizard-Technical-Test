@@ -1,4 +1,4 @@
-package com.rizahanmiy.trinitywizardtest.data.entities
+package com.rizahanmiy.trinitywizard.data.entities
 
 import com.squareup.moshi.JsonClass
 

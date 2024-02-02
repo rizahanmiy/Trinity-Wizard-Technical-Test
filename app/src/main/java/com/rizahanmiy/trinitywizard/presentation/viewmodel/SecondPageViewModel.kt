@@ -1,4 +1,4 @@
-package com.rizahanmiy.trinitywizardtest.presentation.viewmodel
+package com.rizahanmiy.trinitywizard.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
 

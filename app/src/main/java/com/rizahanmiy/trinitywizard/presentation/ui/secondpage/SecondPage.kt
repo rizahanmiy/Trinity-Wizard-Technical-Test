@@ -1,4 +1,4 @@
-package com.rizahanmiy.trinitywizardtest.presentation.ui.secondpage
+package com.rizahanmiy.trinitywizard.presentation.ui.secondpage
 
 import android.os.Bundle
 import android.text.Editable
@@ -12,9 +12,9 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
-import com.rizahanmiy.trinitywizardtest.R
-import com.rizahanmiy.trinitywizardtest.databinding.FragmentSecondPageBinding
-import com.rizahanmiy.trinitywizardtest.presentation.viewmodel.SecondPageViewModel
+import com.rizahanmiy.trinitywizard.R
+import com.rizahanmiy.trinitywizard.databinding.FragmentSecondPageBinding
+import com.rizahanmiy.trinitywizard.presentation.viewmodel.SecondPageViewModel
 
 class SecondPage: Fragment() {
 

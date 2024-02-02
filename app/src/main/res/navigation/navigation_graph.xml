@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/firstPage"
-        android:name="com.rizahanmiy.trinitywizardtest.presentation.ui.firstpage.FirstPage"
+        android:name="com.rizahanmiy.trinitywizard.presentation.ui.firstpage.FirstPage"
         android:label="firstPage"
         tools:layout="@layout/fragment_first_page">
         <action
@@ -33,7 +33,7 @@
 
     <fragment
         android:id="@+id/secondPage"
-        android:name="com.rizahanmiy.trinitywizardtest.presentation.ui.secondpage.SecondPage"
+        android:name="com.rizahanmiy.trinitywizard.presentation.ui.secondpage.SecondPage"
         android:label="secondPage"
         tools:layout="@layout/fragment_second_page">
         <action

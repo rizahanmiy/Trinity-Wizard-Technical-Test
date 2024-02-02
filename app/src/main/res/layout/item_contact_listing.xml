@@ -8,7 +8,7 @@
 
         <variable
             name="data"
-            type="com.rizahanmiy.trinitywizardtest.data.entities.Contacts" />
+            type="com.rizahanmiy.trinitywizard.data.entities.Contacts" />
 
     </data>
 

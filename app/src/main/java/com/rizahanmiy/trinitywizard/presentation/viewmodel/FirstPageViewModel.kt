@@ -1,11 +1,11 @@
-package com.rizahanmiy.trinitywizardtest.presentation.viewmodel
+package com.rizahanmiy.trinitywizard.presentation.viewmodel
 
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.rizahanmiy.trinitywizardtest.data.entities.Contacts
-import com.rizahanmiy.trinitywizardtest.util.common.JsonUtil.getAsset
+import com.rizahanmiy.trinitywizard.data.entities.Contacts
+import com.rizahanmiy.trinitywizard.util.common.JsonUtil.getAsset
 
 class FirstPageViewModel: ViewModel() {
 

@@ -1,7 +1,7 @@
-package com.rizahanmiy.trinitywizardtest.util.common
+package com.rizahanmiy.trinitywizard.util.common
 
 import android.content.Context
-import com.rizahanmiy.trinitywizardtest.data.entities.Contacts
+import com.rizahanmiy.trinitywizard.data.entities.Contacts
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types

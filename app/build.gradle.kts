@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.rizahanmiy.trinitywizardtest"
+    namespace = "com.rizahanmiy.trinitywizard"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.a2pageapp"
+        applicationId = "com.rizahanmiy.trinitywizard"
         minSdk = 33
         targetSdk = 33
         versionCode = 1

@@ -1,8 +1,8 @@
-package com.rizahanmiy.trinitywizardtest.presentation.ui.main
+package com.rizahanmiy.trinitywizard.presentation.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.rizahanmiy.trinitywizardtest.databinding.ActivityMainBinding
+import androidx.appcompat.app.AppCompatActivity
+import com.rizahanmiy.trinitywizard.databinding.ActivityMainBinding
 
 
 class MainActivity : AppCompatActivity() {
